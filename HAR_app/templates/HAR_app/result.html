@@ -1,0 +1,69 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction result</title>
+</head>
+<body>
+    <h1>Prediction result</h1>
+    <p>Prediction: {{ prediction }}</p>
+    <img src="{{ image_path }}" alt="Uploaded image">
+    <a href="/">Upload another image</a>
+</body>
+</html> {% endcomment %}
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction result</title>
+</head>
+<body>
+    <h1>Prediction result</h1>
+    <ul>
+        {% for label, prob in sorted_probs %}
+            <li>{{ label }}: {{ prob }}</li>
+        {% endfor %}
+    </ul>
+    <img src="{{ image_path }}" alt="Uploaded image">
+    <a href="/">Upload another image</a>
+</body>
+</html> {% endcomment %}
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Prediction result</h1>
+    <ul>
+        {% for label, prob in sorted_probs %}
+            <li>{{ label }}: {{ prob }}</li>
+        {% endfor %}
+    </ul>
+    <img src="{% static image_path %}" alt="Uploaded image">
+    <a href="/">Upload another image</a>
+</body>
+</html> {% endcomment %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Prediction result</h1>
+    {% for label, prob in sorted_probs %}
+        {% if forloop.first %}
+            <p class="top-prediction">{{ label }}: {{ prob }}</p>
+        {% else %}
+            <p>{{ label }}: {{ prob }}</p>
+        {% endif %}
+    {% endfor %}
+    <img src="{% static image_path %}" alt="Uploaded image">
+    <a href="/">Upload another image</a>
+</body>
+</html>
