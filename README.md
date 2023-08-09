@@ -25,4 +25,4 @@ This repository contains a Django-based web application that uses a machine lear
 
 
 [Model training notebook link][notebook]
-[Model trained using PyTorch and FastAI]: [URL](https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI)https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI "Model trained using PyTorch and FastAI"
+Model trained using PyTorch and FastAI: [https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI]https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI "Model trained using PyTorch and FastAI"
