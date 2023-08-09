@@ -21,5 +21,5 @@ This repository contains a Django-based web application that uses a machine lear
 
 1. Click the "Upload" button to select an image from your local machine.
 2. Click "Submit" to send the image to the server.
-3. The server will process the image and display the predicted human activity along with the confidence level.
+3. The server will process the image and display the predicted human activity with the highest confidejnce level at the top, along with it's confidence level, followed by the other classes of human activities with lower confidence levels, which thus have a lower possibility for being true for the given image. 
 
