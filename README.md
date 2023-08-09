@@ -21,8 +21,7 @@ This repository contains a Django-based web application that uses a machine lear
 
 1. Click the "Upload" button to select an image from your local machine.
 2. Click "Submit" to send the image to the server.
-3. The server will process the image and display the predicted human activity with the highest confidejnce level at the top, along with it's confidence level, followed by the other classes of human activities with lower confidence levels, which thus have a lower possibility for being true for the given image. 
+3. The server will process the image and display the predicted human activity with the highest confidence level at the top, along with its confidence level, followed by the other classes of human activities with lower confidence levels, which thus have a lower possibility of being true for the given image.
 
 
-[Model training notebook link][notebook]
-Model trained using PyTorch and FastAI: [https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI]https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI "Model trained using PyTorch and FastAI"
+Here's the link to that notebook in which I trained the model that has been utilized here: [Notebook Link](https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI)
