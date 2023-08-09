@@ -23,5 +23,7 @@ This repository contains a Django-based web application that uses a machine lear
 2. Click "Submit" to send the image to the server.
 3. The server will process the image and display the predicted human activity with the highest confidence level at the top, along with its confidence level, followed by the other classes of human activities with lower confidence levels, which thus have a lower possibility of being true for the given image.
 
+### The notebook is a part of the final project done for Celebal Summer Internship 2023 - by Satadru Bhowmik (CSI ID:  CT-CSI23/DS0492)
+
 
 Here's the link to that notebook in which I trained the model that has been utilized here: [Notebook Link](https://github.com/sagacious-satadru/Human_Activity_Recognition_FastAI)
