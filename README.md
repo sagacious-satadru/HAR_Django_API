@@ -1,6 +1,6 @@
 # Human Activity Recognition (HAR) Django API
 
-This repository contains a Django-based web application that uses a machine learning model to classify human activities based on images. The model was trained using the [mention the dataset or method you used to train the model here].
+This repository contains a Django-based web application that uses a machine learning model to classify human activities based on images. The model was trained using the images downloaded via the Bing Image search API. 
 
 ## Features
 
